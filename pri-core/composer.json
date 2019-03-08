@@ -1,0 +1,22 @@
+{
+	"name": "primaria/pri-core",
+    "description": "Extencion de principal del proyecto primaria",
+    "keywords": ["yii2", "core", "primaria","pri-core"],
+	"type": "yii2-extension",
+	"license": "BSD-3-Clause",
+	"support" : {
+		"issues" : "https://github.com/primaria/pri-core/issues?state=open",
+		"source" : "https://github.com/primaria/pri-core"
+	},
+	"authors": [{
+		"name": "primaria",
+		"email": "primaria@primaria.cl"
+	}],
+	"require": {
+		"yiisoft/yii2": "~2.0.13",
+		"yiisoft/yii2-bootstrap" : "^2.0.0"
+	},
+	"autoload": {
+		"psr-4": { "primaria\\core\\": "src" }
+	}
+}
