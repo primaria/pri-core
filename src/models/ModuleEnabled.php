@@ -68,7 +68,7 @@ class ModuleEnabled extends \yii\db\ActiveRecord
         $enabledModules = Yii::$app->cache->get(self::CACHE_ID_ALL_IDS);
         if ($enabledModules === false) {
             $enabledModules = [];
-            foreach (\humhub\models\ModuleEnabled::find()->all() as $em) {
+            foreach (\primaria\core\models\ModuleEnabled::find()->all() as $em) {
                 $enabledModules[] = $em->module_id;
             }
             Yii::$app->cache->set(self::CACHE_ID_ALL_IDS, $enabledModules);
