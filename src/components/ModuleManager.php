@@ -355,7 +355,7 @@ class ModuleManager extends Component
      * Enables a module
      *
      * @since 1.1
-     * @param \humhub\components\Module $module
+     * @param \primaria\core\components\Module $module
      */
     public function enable(Module $module)
     {
@@ -385,7 +385,7 @@ class ModuleManager extends Component
      * Disables a module
      *
      * @since 1.1
-     * @param \humhub\components\Module $module
+     * @param \primaria\core\components\Module $module
      */
     public function disable(Module $module)
     {
