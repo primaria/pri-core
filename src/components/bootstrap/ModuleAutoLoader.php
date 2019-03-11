@@ -7,7 +7,7 @@
 
 namespace primaria\core\components\bootstrap;
 
-use primaria\core\components\Application;
+//use primaria\core\components\Application;
 use Yii;
 use yii\base\BootstrapInterface;
 use yii\helpers\FileHelper;
