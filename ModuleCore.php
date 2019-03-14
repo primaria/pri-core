@@ -10,6 +10,7 @@ namespace primaria\core;
 
 
 use primaria\core\components\Module;
+use yii\web\HttpException;
 
 class ModuleCore extends Module
 {
@@ -39,5 +40,16 @@ class ModuleCore extends Module
     public function getName()
     {
         return Yii::t('AdminModule.base', 'Admin');
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function init()
+    {
+        parent::init();
+
+        //$this->layout = '@app/modules/prueba/views/layouts/main.php';
+
     }
 }
