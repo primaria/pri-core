@@ -12,7 +12,7 @@ namespace primaria\core;
 use primaria\core\components\Module;
 use yii\web\HttpException;
 
-class ModuleCore extends Module
+class CoreModule extends Module
 {
     /**
      * @inheritdoc
