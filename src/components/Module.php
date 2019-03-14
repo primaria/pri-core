@@ -11,8 +11,9 @@ namespace primaria\core\components;
 //use humhub\modules\activity\components\BaseActivity;
 //use humhub\modules\activity\models\Activity;
 use Yii;
+use \yii\base\Module as BaseModule;
 use yii\helpers\Json;
-//use humhub\models\Setting;
+use primaria\core\models\Setting;
 //use humhub\modules\file\libs\FileHelper;
 //use humhub\modules\notification\components\BaseNotification;
 //use humhub\modules\content\models\ContentContainerSetting;
@@ -25,7 +26,7 @@ use yii\web\HttpException;
  * @property SettingsManager $settings
  * @author luke
  */
-class Module extends \yii\base\Module
+class Module extends BaseModule
 {
 
     /**
@@ -48,7 +49,7 @@ class Module extends \yii\base\Module
 
         // Set settings component
         $this->set('settings', [
-            'class' => SettingsManager::class,
+            'class' =>SettingsManager::class,
             'moduleId' => $this->id
         ]);
     }
