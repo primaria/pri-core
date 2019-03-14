@@ -31,7 +31,7 @@ class ModuleAutoLoader implements BootstrapInterface
     {
         $modules = self::locateModules();
 
-        Yii::$app->moduleManager->registerBulk($modules);
+      //  Yii::$app->CoreModule->registerBulk($modules);
     }
 
     /**
