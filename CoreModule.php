@@ -9,40 +9,11 @@
 namespace primaria\core;
 
 
-use primaria\core\components\Module;
-use yii\web\HttpException;
+use yii\base\Module as BaseModule;
 
-class CoreModule extends Module
+class CoreModule extends BaseModule
 {
-    /**
-     * @inheritdoc
-     */
-    public $controllerNamespace = 'primaria\core\controllers';
-
-    /**
-     * @inheritdoc
-     */
-    public $defaultRoute = 'index';
-
-    /**
-     * @inheritdoc
-     */
-    public $isCoreModule = true;
-
-    /**
-     * @inheritdoc
-     */
-    public $resourcesPath = 'resources';
-
-    /**
-     * @inheritdoc
-     */
-    public function getName()
-    {
-        return Yii::t('AdminModule.base', 'Admin');
-    }
-
-    /**
+     /**
      * @inheritdoc
      */
     public function init()
