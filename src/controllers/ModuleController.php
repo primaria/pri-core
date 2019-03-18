@@ -6,11 +6,11 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace humhub\modules\admin\controllers;
+namespace primaria\core\controllers;
 
-use Yii;
-use yii\web\HttpException;
-use primaria\core\components\Controller;
+use yii;
+use yii\web\Controller;
+
 
 /**
  * Module Controller controls all third party modules in a humhub installation.
@@ -19,25 +19,6 @@ use primaria\core\components\Controller;
  */
 class ModuleController extends Controller
 {
-
-    /**
-     * @inheritdoc
-     */
-    public $adminOnly = false;
-    private $_onlineModuleManager = null;
-
-    /**
-     * @inheritdoc
-     */
-    public function init()
-    {
-        //$this->appendPageTitle(Yii::t('AdminModule.base', 'Modules'));
-
-        return parent::init();
-    }
-
-
-
     public function actionIndex()
     {
         //Yii::$app->moduleManager->flushCache();
