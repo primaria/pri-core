@@ -26,7 +26,7 @@ class ModuleAutoLoader implements BootstrapInterface
 
     /** @inheritdoc */
     public function bootstrap($app){
-        if ($app->hasModule('user') && ($module = $app->getModule('user')) instanceof Module) {
+        if ($app->hasModule('core') && ($module = $app->getModule('core')) instanceof Module) {
             $this->_modelMap = array_merge($this->_modelMap, $module->modelMap);
         }
     }
