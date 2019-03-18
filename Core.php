@@ -13,18 +13,18 @@ use yii\base\Module as BaseModule;
 
 class Core extends BaseModule
 {
-    /** @var array Model map */
-    public $modelMap = [];
+    public $controllerNamespace;
 
     /**
-     * @var string The prefix for user module URL.
-     *
-     * @See [[GroupUrlRule::prefix]]
+     * @inheritdoc
      */
-    public $urlPrefix = 'core';
+    public function init()
+    {
+        if (empty($this->controllerNamespace)) {
+            $this->controllerNamespace = \Yii::$app->controllerNamespace === 'primaria\core\controllers';
+        }
+        parent::init();
 
-    /** @var array The rules to be used in URL management. */
-    public $urlRules = [
-        'module/<action:\w+>' => 'module/<action>'
-    ];
+
+    }
 }
