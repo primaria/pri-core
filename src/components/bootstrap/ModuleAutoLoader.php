@@ -28,6 +28,11 @@ class ModuleAutoLoader implements BootstrapInterface
     public function bootstrap($app){
         if ($app->hasModule('core') && ($module = $app->getModule('core')) instanceof Module) {
             $this->_modelMap = array_merge($this->_modelMap, $module->modelMap);
+
+            $configUrlRule = [
+                'prefix' => $module->urlPrefix,
+                //'rules'  => $module->urlRules,
+            ];
         }
     }
 
