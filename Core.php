@@ -25,6 +25,6 @@ class Core extends BaseModule
 
     /** @var array The rules to be used in URL management. */
     public $urlRules = [
-        'module/<action:\w+>'                  => 'settings/<action>'
+        'module/<action:\w+>' => 'module/<action>'
     ];
 }
