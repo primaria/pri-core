@@ -11,7 +11,7 @@ namespace primaria\core;
 use yii;
 use yii\base\Module as BaseModule;
 
-class Core extends BaseModule
+class Module extends BaseModule
 {
     public $controllerNamespace;
 
