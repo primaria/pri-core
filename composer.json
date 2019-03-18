@@ -27,10 +27,4 @@
 	"autoload": {
 		"psr-4": { "primaria\\core\\": "src" }
 	},
-	"extra" : {
-		"bootstrap" : "primaria\\core\\components\\bootstrap\\ModuleAutoLoader",
-		"branch-alias" : {
-			"dev-master" : "0.1.x-dev"
-		}
-	}
 }

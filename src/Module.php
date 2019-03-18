@@ -13,16 +13,14 @@ use yii\base\Module as BaseModule;
 
 class Module extends BaseModule
 {
-    public $controllerNamespace;
+    public $controllerNamespace = 'primaria\core\controllers';
 
     /**
      * @inheritdoc
      */
     public function init()
     {
-        if (empty($this->controllerNamespace)) {
-            $this->controllerNamespace = \Yii::$app->controllerNamespace === 'primaria\core\controllers';
-        }
+
         parent::init();
 
         if (!\Yii::$app->hasModule('core')) {
