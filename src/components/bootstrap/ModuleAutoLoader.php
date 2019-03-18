@@ -9,8 +9,10 @@ namespace primaria\core\components\bootstrap;
 
 
 use Yii;
+use yii\authclient\Collection;
 use yii\base\BootstrapInterface;
-use yii\helpers\FileHelper;
+use yii\console\Application as ConsoleApplication;
+use yii\i18n\PhpMessageSource;
 
 /**
  * ModuleAutoLoader automatically searches for config.php files in module folder an executes them.
