@@ -19,5 +19,16 @@ use yii\helpers\FileHelper;
  */
 class ModuleAutoLoader implements BootstrapInterface
 {
+    /** @var array Model's map */
+    private $_modelMap = [
+
+    ];
+
+    /** @inheritdoc */
+    public function bootstrap($app){
+        if ($app->hasModule('user') && ($module = $app->getModule('user')) instanceof Module) {
+            $this->_modelMap = array_merge($this->_modelMap, $module->modelMap);
+        }
+    }
 
 }
