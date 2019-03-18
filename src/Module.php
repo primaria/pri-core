@@ -25,6 +25,9 @@ class Module extends BaseModule
         }
         parent::init();
 
+        if (!\Yii::$app->hasModule('core')) {
+            \Yii::$app->setModule('core', ['class' => 'primaria\core\Module']);
+        }
 
     }
 }
