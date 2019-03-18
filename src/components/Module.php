@@ -12,12 +12,14 @@ namespace primaria\core\components;
 //use humhub\modules\activity\models\Activity;
 use Yii;
 use \yii\base\Module as BaseModule;
+use yii\helpers\FileHelper;
 use yii\helpers\Json;
 use primaria\core\models\Setting;
 //use humhub\modules\file\libs\FileHelper;
 //use humhub\modules\notification\components\BaseNotification;
 //use humhub\modules\content\models\ContentContainerSetting;
 use yii\web\AssetBundle;
+use yii\web\AssetManager;
 use yii\web\HttpException;
 
 /**
