@@ -17,7 +17,7 @@ use yii\web\Controller;
  *
  * @since 0.5
  */
-class ModuleController extends Controller
+class CoreController extends Controller
 {
     public function actionIndex()
     {
