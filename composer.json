@@ -8,6 +8,12 @@
 		"issues" : "https://github.com/primaria/pri-core/issues?state=open",
 		"source" : "https://github.com/primaria/pri-core"
 	},
+	"require": {
+		"yiisoft/yii2": "~2.0.16",
+		"yiisoft/yii2-bootstrap" : "^2.0.9",
+		"yiisoft/yii2-swiftmailer" : "^2.0.7",
+		"yiisoft/yii2-authclient" : "^2.1.0"
+	},
 	"authors": [{
 		"name": "primaria",
 		"email": "primaria@primaria.cl"
