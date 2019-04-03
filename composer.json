@@ -3,7 +3,7 @@
     "description": "Extencion de principal del proyecto primaria",
     "keywords": ["yii2", "core", "primaria","pri-core"],
 	"type": "yii2-extension",
-	"license": "BSD-3-Clause",
+	"license": "MIT",
 	"support" : {
 		"issues" : "https://github.com/primaria/pri-core/issues?state=open",
 		"source" : "https://github.com/primaria/pri-core"

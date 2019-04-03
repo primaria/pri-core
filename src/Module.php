@@ -13,7 +13,7 @@ use yii\base\Module as BaseModule;
 
 class Module extends BaseModule
 {
-    public $controllerNamespace = 'primaria\core\controllers';
+    public $controllerNamespace = 'primaria\core\src\controllers';
 
     /**
      * @inheritdoc
