@@ -16,6 +16,7 @@ class Core extends BaseModule
     public $controllerNamespace = 'primaria\core\controllers';
 
     /**
+     * *
      * @inheritdoc
      */
     public function init()
