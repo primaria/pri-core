@@ -13,7 +13,7 @@ use yii\web\Controller;
 
 
 /**
- * Module Controller controls all third party modules in a humhub installation.
+ * Core Controller controls all third party modules in a humhub installation.
  *
  * @since 0.5
  */

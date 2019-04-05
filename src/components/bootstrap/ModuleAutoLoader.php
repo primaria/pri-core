@@ -23,7 +23,7 @@ class ModuleAutoLoader implements BootstrapInterface
 {
     /** @var array Model's map */
     private $_modelMap = [
-        'Module' => 'primaria\core\models\Core',
+        'Core' => 'primaria\core\models\Core',
     ];
 
     /** @inheritdoc */
@@ -35,7 +35,7 @@ class ModuleAutoLoader implements BootstrapInterface
                 Yii::$container->set($class, $definition);
                 $modelName = is_array($definition) ? $definition['class'] : $definition;
                 $module->modelMap[$name] = $modelName;
-                if (in_array($name, ['Module', 'Profile', 'Token', 'Account'])) {
+                if (in_array($name, ['Core', 'Profile', 'Token', 'Account'])) {
                     Yii::$container->set($name . 'Query', function () use ($modelName) {
                         return $modelName::find();
                     });

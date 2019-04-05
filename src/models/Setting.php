@@ -51,7 +51,7 @@ class Setting extends ActiveRecord
             'id' => 'ID',
             'name' => 'Name',
             'value' => 'Value',
-            'module_id' => 'Module ID',
+            'module_id' => 'Core ID',
         ];
     }
 

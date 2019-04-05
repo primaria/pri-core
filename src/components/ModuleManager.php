@@ -75,7 +75,7 @@ class ModuleManager extends Component
     protected $coreModules = [];
 
     /**
-     * Module Manager init
+     * Core Manager init
      *
      * Loads all enabled moduleId's from database
      */
@@ -126,7 +126,7 @@ class ModuleManager extends Component
 
         // Check mandatory config options
         if (!isset($config['class']) || !isset($config['id'])) {
-            throw new InvalidConfigException('Module configuration requires an id and class attribute!');
+            throw new InvalidConfigException('Core configuration requires an id and class attribute!');
         }
 
         $isCoreModule = (isset($config['isCoreModule']) && $config['isCoreModule']);
@@ -178,7 +178,7 @@ class ModuleManager extends Component
             $moduleConfig = ArrayHelper::merge($moduleConfig, Yii::$app->modules[$config['id']]);
         }
 
-        // Register Yii Module
+        // Register Yii Core
         Yii::$app->setModule($config['id'], $moduleConfig);
 
         // Register Event Handlers
@@ -196,7 +196,7 @@ class ModuleManager extends Component
     /**
      * Returns all modules (also disabled modules).
      *
-     * Note: Only modules which extends \primaria\core\components\Module will be returned.
+     * Note: Only modules which extends \primaria\core\components\Core will be returned.
      *
      * @param array $options options (name => config)
      * The following options are available:
@@ -261,17 +261,17 @@ class ModuleManager extends Component
     /**
      * Returns a module instance by id
      *
-     * @param string $id Module Id
+     * @param string $id Core Id
      * @return Module|object
      */
     public function getModule($id)
     {
-        // Enabled Module
+        // Enabled Core
         if (Yii::$app->hasModule($id)) {
             return Yii::$app->getModule($id, true);
         }
 
-        // Disabled Module
+        // Disabled Core
         if (isset($this->modules[$id])) {
             $class = $this->modules[$id];
             return Yii::createObject($class, [$id, Yii::$app]);
@@ -327,7 +327,7 @@ class ModuleManager extends Component
         }
 
         /**
-         * Disable Module
+         * Disable Core
          */
         if ($disableBeforeRemove && Yii::$app->hasModule($moduleId)) {
             $module->disable();

@@ -45,7 +45,7 @@ class ModuleEnabled extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'module_id' => 'Module ID',
+            'module_id' => 'Core ID',
         ];
     }
 

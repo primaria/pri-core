@@ -11,9 +11,9 @@ namespace primaria\core;
 use yii;
 use yii\base\Module as BaseModule;
 
-class Module extends BaseModule
+class Core extends BaseModule
 {
-    public $controllerNamespace = 'primaria\core\src\controllers';
+    public $controllerNamespace = 'primaria\core\controllers';
 
     /**
      * @inheritdoc
@@ -23,9 +23,9 @@ class Module extends BaseModule
 
         parent::init();
 
-        if (!\Yii::$app->hasModule('core')) {
-            \Yii::$app->setModule('core', ['class' => 'primaria\core\Module']);
-        }
+        /*if (!\Yii::$app->hasModule('core')) {
+            \Yii::$app->setModule('core', ['class' => 'primaria\core\Core']);
+        }*/
 
     }
 }
