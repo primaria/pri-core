@@ -23,7 +23,8 @@ class Core extends BaseModule
     {
 
         parent::init();
-
+        echo "hola";
+        die;
         /*if (!\Yii::$app->hasModule('core')) {
             \Yii::$app->setModule('core', ['class' => 'primaria\core\Core']);
         }*/
