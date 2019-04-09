@@ -5,40 +5,18 @@
 
 use yii\helpers\Html;
 
-$this->title = 'About';
+$this->title = 'Core';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-about">
-    <h1><?= Html::encode($this->title) ?></h1>
-
+<div class="core-default-index">
+    <h1><?= $this->context->action->uniqueId ?></h1>
     <p>
-        This is the About page. You may modify the following file to customize its content:
+        This is the view content for action "<?= $this->context->action->id ?>".
+        The action belongs to the controller "<?= get_class($this->context) ?>"
+        in the "<?= $this->context->module->id ?>" module.
     </p>
-
-    <code><?= __FILE__ ?></code>
-
-    <pre>
-        <?php
-        //print_r(\primaria\core\components\ModuleManager::getModule('prueba'));
-        //print_r(Yii::$container);
-        print_r(Yii::$app->getModule('core'));
-        ?>
-    </pre>
-
-
-    <pre>
-        <?php
-
-        //print_r(ModuleAutoLoader::findModules(Yii::$app->params['moduleAutoloadPaths']));
-        ?>
-    </pre>
-
-    <pre>
-        <?= print_r(yii::$aliases); ?>
-    </pre>
-
-    <pre>
-        <?= print_r(yii::$app); ?>
-    </pre>
-
+    <p>
+        You may customize this page by editing the following file:<br>
+        <code><?= __FILE__ ?></code>
+    </p>
 </div>

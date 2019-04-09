@@ -8,7 +8,7 @@
 
 namespace primaria\core\controllers;
 
-use yii;
+
 use yii\web\Controller;
 
 
@@ -19,11 +19,13 @@ use yii\web\Controller;
  */
 class CoreController extends Controller
 {
+    /**
+     * Renders the index view for the module
+     * @return string
+     */
     public function actionIndex()
     {
-        //Yii::$app->moduleManager->flushCache();
-
-        return $this->redirect(['index']);
+        return $this->render('index');
     }
 
 
