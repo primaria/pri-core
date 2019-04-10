@@ -11,12 +11,12 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="core-default-index">
     <h1><?= $this->context->action->uniqueId ?></h1>
     <p>
-        This is the view content for action "<?= $this->context->action->id ?>".
-        The action belongs to the controller "<?= get_class($this->context) ?>"
-        in the "<?= $this->context->module->id ?>" module.
+        Este es el contenido de la vista para la accion "<?= $this->context->action->id ?>".
+        La accion pertenece al controlador "<?= get_class($this->context) ?>"
+        en el modulo "<?= $this->context->module->id ?>".
     </p>
     <p>
-        You may customize this page by editing the following file:<br>
+        Puede personalizar la pagina editando el siguiente archivo:<br>
         <code><?= __FILE__ ?></code>
     </p>
 </div>
