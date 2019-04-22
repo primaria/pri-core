@@ -6,11 +6,11 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace humhub\components\i18n;
+namespace primaria\core\components\i18n;
 
 use Yii;
 use yii\base\InvalidArgumentException;
-use humhub\models\forms\ChooseLanguage;
+#use humhub\models\forms\ChooseLanguage;
 
 /**
  * I18N provides features related with internationalization (I18N) and localization (L10N).

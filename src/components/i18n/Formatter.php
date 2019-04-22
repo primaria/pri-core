@@ -6,7 +6,7 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace humhub\components\i18n;
+namespace primaria\core\components\i18n;
 
 use IntlDateFormatter;
 use Yii;
