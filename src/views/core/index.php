@@ -19,4 +19,6 @@ $this->params['breadcrumbs'][] = $this->title;
         Puede personalizar la pagina editando el siguiente archivo:<br>
         <code><?= __FILE__ ?></code>
     </p>
+
+    <h4><?= Yii::t('base', 'General Settings'); ?></h4>
 </div>
