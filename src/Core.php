@@ -24,4 +24,4 @@ class Core extends BaseModule
         }
          */
     }
-}
+} 
