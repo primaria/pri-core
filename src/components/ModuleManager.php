@@ -212,6 +212,8 @@ class ModuleManager extends Component
     {
         $modules = [];
 
+        print_r($modules);
+        die();
         foreach ($this->modules as $id => $class) {
 
             // Skip core modules
