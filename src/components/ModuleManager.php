@@ -86,7 +86,9 @@ class ModuleManager extends Component
         // Either database installed and not in installed state
        if (!Yii::$app->params['databaseInstalled'] && !Yii::$app->params['installed']) {
             return;
-        }
+        }else{
+           die('Base de datos no instalada');
+       }
 
         if (!BaseSettingsManager::isDatabaseInstalled()) {
             $this->enabledModules = [];
