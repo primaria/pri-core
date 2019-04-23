@@ -29,8 +29,7 @@ class ModuleAutoLoader implements BootstrapInterface
     }
 
     /**
-     * Find available modules
-     * @deprecated 1.3 replace call for locateModules with findModules and handle caching outside of method (e.g. in boostrap)
+     * Find available module
      * @return array|bool|mixed
      */
     public static function locateModules()
