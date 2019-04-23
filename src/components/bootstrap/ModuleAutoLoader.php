@@ -36,9 +36,6 @@ class ModuleAutoLoader implements BootstrapInterface
     {
         $modules = Yii::$app->cache->get(self::CACHE_ID);
 
-        print_r($modules);
-        die();
-
         if ($modules === false) {
             $modules = [];
             foreach (Yii::$app->params['moduleAutoloadPaths'] as $modulePath) {
@@ -60,6 +57,7 @@ class ModuleAutoLoader implements BootstrapInterface
             }
             Yii::$app->cache->set(self::CACHE_ID, $modules);
         }
+        print_r($modules);
 
         return $modules;
     }
