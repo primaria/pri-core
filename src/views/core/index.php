@@ -20,5 +20,5 @@ $this->params['breadcrumbs'][] = $this->title;
         <code><?= __FILE__ ?></code>
     </p>
 
-    <h4><?= Yii::t('base', 'General Settings'); ?></h4>
+    <h4><?= Yii::t('core.base', 'General Settings'); ?></h4>
 </div>
