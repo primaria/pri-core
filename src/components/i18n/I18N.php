@@ -152,6 +152,7 @@ class I18N extends \yii\i18n\I18N
     public function getMessageSource($category)
     {
         // Requested MessageSource already loaded
+        //La fuente del mensaje se verifica si esta cargado o no.
         if (isset($this->translations[$category]) && $this->translations[$category] instanceof \yii\i18n\MessageSource) {
             return $this->translations[$category];
         }
