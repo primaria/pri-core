@@ -198,7 +198,7 @@ class ModuleManager extends Component
     /**
      * Returns all modules (also disabled modules).
      *
-     * Note: Only modules which extends \primaria\core\components\Core will be returned.
+     * Note: Only modules which extends \primaria\core\Core will be returned.
      *
      * @param array $options options (name => config)
      * The following options are available:
