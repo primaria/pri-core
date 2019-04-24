@@ -58,7 +58,7 @@ class ModuleAutoLoader implements BootstrapInterface
             Yii::$app->cache->set(self::CACHE_ID, $modules);
         }
         print_r($modules);
-
+        die();
         return $modules;
     }
 
