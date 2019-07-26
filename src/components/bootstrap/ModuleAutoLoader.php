@@ -25,6 +25,12 @@ class ModuleAutoLoader implements BootstrapInterface
     {
         $modules = self::locateModules();
 
+        if (!$app->has('moduleManager')) {
+            $app->set('moduleManager', [
+                'class' => '\humhub\components\ModuleManager',
+            ]);
+        }
+
         Yii::$app->moduleManager->registerBulk($modules);
     }
 

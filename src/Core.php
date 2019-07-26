@@ -6,6 +6,9 @@ use yii\base\Module as BaseModule;
 
 class Core extends BaseModule
 {
+    /** @var array Model map */
+    public $modelMap = [];
+
     /**
      * {@inheritdoc}
      */
