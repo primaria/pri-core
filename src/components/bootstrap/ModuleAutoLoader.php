@@ -27,7 +27,7 @@ class ModuleAutoLoader implements BootstrapInterface
 
         if (!$app->has('moduleManager')) {
             $app->set('moduleManager', [
-                'class' => '\humhub\components\ModuleManager',
+                'class' => 'primaria\core\components\ModuleManager',
             ]);
         }
 
